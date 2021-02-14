@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection {
+            background-color: #090;
+        }
+        .after-content::after {
+            content: 'Cristian';
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello world from Peru!</div>
+    <span class="after-content">My name is: </span>
+</body>
+</html>
