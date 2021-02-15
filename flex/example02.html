@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            .container {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+            }
+            .top {
+                display: flex;
+                flex: 1;
+            }
+            .top .left {
+                width: 200px;
+                background-color: #009900;
+            }
+            .top .right {
+                flex: 1;
+                flex-direction: column;
+                display: flex;
+            }
+
+            .top .right .header {
+                height: 100px;
+                background-color: red;
+            }
+
+            .top .right .main {
+                flex: 1;
+                background-color: purple;
+            }
+
+            .bottom {
+                height: 50px;
+                background-color: greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right">
+                    <div class="header"></div>
+                    <div class="main"></div>
+                </div>
+            </div>
+            <div class="bottom">
+            </div>
+        </div>
+    </body>
+</html>
