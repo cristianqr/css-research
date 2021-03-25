@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadall::Initial</title>
+    <style>
+        div {
+            border: 2px solid #090;
+        }
+        .initial {
+            display: inline-block;
+            color: inherit;
+            display: initial;
+            border: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="initial">
+            Initial
+        </p>
+        
+    </div>
+    <button id="initial">Initial</button>
+    <script>
+        const button = document.querySelector('#initial');
+        const divEl = document.querySelector('.initial');
+        const style = getComputedStyle(divEl);
+        button.addEventListener('click', () => {
+            divEl.style.color = 'initial';
+            divEl.style.display = 'initial';
+            console.log('======>', style);
+        });
+    </script>
+</body>
+</html>
