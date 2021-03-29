@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <title>CristianQR::Flex Wrap</title>
+    <style>
+        .wrapper {
+            display: flex;
+            background-color: #009900;
+            height: 200px;
+            width: 50%;
+            /* overflow: hidden; */
+        }
+
+        .wrapper div {
+            padding: 0 150px;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is an example for flex-wrap: nowrap</h1>
+    <div class="wrapper">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+    </div>
+
+    <h1>This is an example for flex-wrap: wrap</h1>
+    <div class="wrapper wrap">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+    </div>
+
+    <h1>This is an example for flex-wrap: wrap-reverse</h1>
+    <div class="wrapper wrap-reverse">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+    </div>
+</body>
+</html>
